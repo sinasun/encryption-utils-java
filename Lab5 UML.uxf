@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>483</x>
+      <y>140</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>EncryptionType
+--
+-START_CHAR: int
+-END_CHAR: int
+-RANGE: int
+--
++ encrypt(input:String):String
++ decrypt(input:String):String
++ getMethod():EncryptionType</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>455</x>
+      <y>266</y>
+      <w>112</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>553</x>
+      <y>266</y>
+      <w>105</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>385</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>CaesarCipher
+--
+-START_CHAR: int
+-END_CHAR: int
+-RANGE: int
+-key:int
+--
++ encrypt(input:String):String
++ decrypt(input:String):String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>567</x>
+      <y>385</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>VigenereCipher
+--
+-START_CHAR: int
+-END_CHAR: int
+-RANGE: int
+-key:String
+-keyLength:int
+--
++ encrypt(input:String):String
++ decrypt(input:String):String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>147</y>
+      <w>189</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Lab4Test
+--
++getMethod():Encryptable
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>322</y>
+      <w>182</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>ScannerUtils
+--
+-input:Scanner
+--
++getMenuItem(options:...String):int
++getString(prompt:String):String
++getInt(prompt:String):int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>357</x>
+      <y>189</y>
+      <w>140</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>259</x>
+      <y>259</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
